@@ -1,0 +1,23 @@
+---
+const { header, content, time } = Astro.props;
+---
+
+<div box-="square" shear-="both">
+    <div class="header-top">
+        <span>{header}</span>
+    </div>
+    <div id="content" class="main-content">
+        <ul marker-="bullet">
+            {Array.isArray(content) && content.map((item) => <li>{item}</li>)}
+        </ul>
+    </div>
+    <div class="header-bottom">
+        <span is-="badge" cap-="triangle" variant-="foreground1">{time}</span>
+    </div>
+</div>
+
+<style>
+    .main-content {
+        padding: 2ch;
+    }
+</style>

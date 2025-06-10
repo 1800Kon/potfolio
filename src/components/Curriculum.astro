@@ -1,0 +1,34 @@
+---
+import CurriculumEntry from "./CurriculumEntry.astro";
+---
+
+<div box-="square" class="box" shear-="top">
+    <div class="header-top-center">
+        <span>&lt; Curriculum &gt;</span>
+    </div>
+    <div class="scroll-view">
+        <CurriculumEntry
+            header="Banco López de Haro"
+            content={[
+                "Manually conducted thorough functional and regression testing on core-systems for the bank's operations.",
+                "Developed micro-services, internal tools and API integrations which enhance the bank's functionality.",
+                "Formulated and executed hundreds of test cases including complex SQL queries to ensure full coverage of critical applications and APIs.",
+            ]}
+            time="01/05/2024 - 10/06/2025"
+        />
+    </div>
+</div>
+
+<style>
+    .box {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .scroll-view {
+        flex: 1;
+        overflow-y: auto;
+        padding: 1ch;
+        margin-bottom: 1ch;
+    }
+</style>

@@ -1,5 +1,5 @@
 ---
-const { header, content, time } = Astro.props;
+const { header, content, description, time } = Astro.props;
 ---
 
 <div box-="square" shear-="both">
@@ -7,6 +7,8 @@ const { header, content, time } = Astro.props;
         <span>{header}</span>
     </div>
     <div id="content" class="main-content">
+        <p>{description}</p>
+        <p>&nbsp;</p>
         <ul marker-="bullet">
             {Array.isArray(content) && content.map((item) => <li>{item}</li>)}
         </ul>

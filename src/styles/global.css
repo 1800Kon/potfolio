@@ -10,6 +10,14 @@
 @import "@webtui/css/components/typography.css";
 @import "@webtui/css/components/badge.css";
 
+@import "@webtui/plugin-nf";
+@import '@webtui/theme-catppuccin';
+
+@layer base {
+    :root {
+        --font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, monospace, "Symbols Nerd Font";
+    }
+}
 
 html,
 body {
@@ -36,4 +44,8 @@ span {
 .header-bottom {
     display: flex;
     justify-content: end;
+}
+
+.justified-paragraph {
+    text-align: justify;
 }

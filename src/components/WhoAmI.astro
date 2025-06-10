@@ -2,10 +2,59 @@
     <div id="whoAmI" class="header-top-center">
         <span>&lt; Who am I? &gt;</span>
     </div>
+    <div class="container-padding">
+        <h1>Hello there!</h1>
+        <p class="justified-paragraph">
+            My name is Konstantin Boguev, I'm a developer from the Dominican
+            Republic.
+        </p>
+        <p>&nbsp;</p>
+        <h2>What do I do?</h2>
+        <p class="justified-paragraph">
+            I am mainly a backend developer with a love for efficient and
+            scalable systems. I enjoy designing APIs, working with databases,
+            and optimizing performance to deliver robust solutions. Outside of
+            the office I love to work out and play games, I'm also a keyboard
+            nerd.
+        </p>
+        <p>&nbsp;</p>
+        <h3>Tech stack:</h3>
+        <div class="big-icons">
+            <span>&#xf07d3;</span>
+            <span>&#xed1b;</span>
+            <span>&#xed44;</span>
+            <span>&#xe7ba;</span>
+            <span>&#xe753;</span>
+            <span>&#xe7c4;</span>
+        </div>
+        <p>&nbsp;</p>
+        <h4>Pineapple on pizza?</h4>
+        <p class="justified-paragraph">Yes.</p>
+    </div>
 </div>
 
 <style>
+    .big-icons {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        font-size: xxx-large;
+    }
+
+    .container-padding {
+        padding: 2ch;
+    }
+
     .box {
-        height: 50%;
+        overflow: hidden;
+        height: 60%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header-top-center {
+        text-align: center;
+        font-weight: bold;
     }
 </style>

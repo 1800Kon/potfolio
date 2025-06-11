@@ -4,18 +4,38 @@ import CurriculumEntry from "./CurriculumEntry.astro";
 
 <div box-="square" class="box" shear-="top">
     <div class="header-top-center">
-        <span>&lt; What have I done? &gt;</span>
+        <span>&lt; My work &gt;</span>
     </div>
     <div class="scroll-view">
         <CurriculumEntry
             header="Banco López de Haro"
-            description="Worked as a software developer and software quality analyst."
+            description="Software developer and software quality analyst."
             content={[
                 "Manually conducted thorough functional and regression testing on core-systems for the bank's operations.",
                 "Developed micro-services, internal tools and API integrations which enhance the bank's functionality.",
                 "Formulated and executed hundreds of test cases including complex SQL queries to ensure full coverage of critical applications and APIs.",
             ]}
-            time="01/05/2024 - Current"
+            time="01/05/2024 - Present"
+        />
+        <CurriculumEntry
+            header="Freelance"
+            description="Development of the ADRES mobile app."
+            content={[
+                "Responsible for the end-to-end development of ADRES, a cross-platform mobile app for Android and iOS built with React Native, streamlining residential area management for users.",
+                "Collaborated closely with stakeholders to seamlessly integrate the new system with legacy infrastructure and APIs, ensuring business continuity.",
+                "Performed blackbox and whitebox testing to ensure functionality.",
+            ]}
+            time="01/05/2024 - 01/09/2024"
+        />
+        <CurriculumEntry
+            header="BeeHolder B.V"
+            description="Developer for the Parkstad eKnip conditional voucher system."
+            content={[
+                "Designed and developed a conditional voucher system that allows for the funding and distribution of financial vouchers which can only be used for specific purchases in the eKnip Parkstad application.",
+                "Enhanced system security by implementing an array of advanced security features and made use of cryptographic data structures to ensure data integrity verification.",
+                "Tested software quality by using manual whitebox and blackbox techniques.",
+            ]}
+            time="01/03/2023 - 01/06/2023"
         />
     </div>
 </div>
@@ -31,5 +51,12 @@ import CurriculumEntry from "./CurriculumEntry.astro";
         overflow-y: auto;
         padding: 1ch;
         margin-bottom: 1ch;
+
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+
+    .scroll-view::-webkit-scrollbar {
+        display: none;
     }
 </style>

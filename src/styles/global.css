@@ -10,8 +10,8 @@
 @import "@webtui/css/components/typography.css";
 @import "@webtui/css/components/badge.css";
 
+@import "@webtui/theme-catppuccin";
 @import "@webtui/plugin-nf";
-@import '@webtui/theme-catppuccin';
 
 @layer base {
     :root {

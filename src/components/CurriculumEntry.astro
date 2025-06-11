@@ -2,7 +2,7 @@
 const { header, content, description, time } = Astro.props;
 ---
 
-<div box-="square" shear-="both">
+<div box-="square" shear-="both" class="bottom-margin">
     <div class="header-top">
         <span>{header}</span>
     </div>
@@ -10,7 +10,12 @@ const { header, content, description, time } = Astro.props;
         <p>{description}</p>
         <p>&nbsp;</p>
         <ul marker-="bullet">
-            {Array.isArray(content) && content.map((item) => <li>{item}</li>)}
+            {
+                Array.isArray(content) &&
+                    content.map((item) => (
+                        <li class="justified-paragraph">{item}</li>
+                    ))
+            }
         </ul>
     </div>
     <div class="header-bottom">
@@ -19,6 +24,9 @@ const { header, content, description, time } = Astro.props;
 </div>
 
 <style>
+    .bottom-margin {
+        margin-bottom: 2ch;
+    }
     .main-content {
         padding: 2ch;
     }
